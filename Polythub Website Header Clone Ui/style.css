@@ -1,0 +1,107 @@
+*{
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  background-color: #dcdcdc;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  color: white;
+    height: 5.5vh;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a:nth-child(n) {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #dcdcdc;
+  transition: all 0.2s linear;
+}
+a:nth-child(n):hover {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #ff5e99;
+}
+.link-text{
+	font-size: 2rem;
+	/* margin-left: 55px; */
+
+}
+ /* section 1 design start here  */
+
+ .container{
+	margin:2rem 5.7rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	/* flex-wrap: wrap; */
+ }
+ .left{
+	background-color: #f0f0f0;
+	width: 40vh;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+ }
+ .right {
+    background-color: #f0f0f0;
+    width: 100vh;
+    margin-left: 25px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+ div.right > h4{
+    margin: 0px 0px;
+    padding: 12px 0px;
+    background-color: rgb(43, 41, 41);
+    color: white;
+    font-size: 1.5em;
+    font-family: cursive;
+    text-align: center;
+}
+  div.left > h2{
+    margin: 0px 0px;
+    padding: 12px 0px;
+    background-color: rgb(43, 41, 41);
+    color: white;
+    font-size: 1.5em;
+    font-family: cursive;
+    text-align: center;
+}
+
+ ul > li:nth-child(n) {
+    padding: 9px 0;
+color: rgb(56, 56, 56);
+}
+
+
+body > section > div > div.left > div > ul{
+	padding: 0px 28px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background-color: #2196F3; */
+    padding: 10px;
+}
+.grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+  img:nth-child(n) {
+    width: 100%;
+}
+
+body > section > div > div.right > div > div > div:nth-child(n) > img{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	/* border-radius: 50px; */
+}
