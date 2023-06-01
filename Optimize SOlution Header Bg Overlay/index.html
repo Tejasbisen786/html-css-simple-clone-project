@@ -1,0 +1,209 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Easy Fullscreen HTML5 Background Video</title>
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <meta name="keywords" content="css3, html5, js, background video, fullscreen video">
+  <meta name="description" content="Super easy to implement HTML5 fullscreen background video library in JavaScript.">
+
+  <style>
+    * {
+      margin: 0; padding: 0;
+    }
+
+
+    #container {
+      overflow: hidden;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
+
+    #background_video {
+      position: absolute;
+
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+
+      object-fit: cover;
+      height: 100%; width: 100%;
+    }
+
+    #video_cover {
+      position: absolute;
+
+      width: 100%; height: 600px;
+
+      background: url('video_cover.jpeg') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+
+    @media (min-width: 768px) {
+      #video_controls {
+        display: none;
+      }
+    }
+
+    /* Demo page specific styles */
+
+    body {
+      text-align: center;
+      font-family: 'proxima-nova', Helvetica;
+    }
+
+    #container {
+      width: 100%;
+      height: 600px;
+    }
+
+    #overlay {
+      position: absolute;
+      top: 0; right: 0; left: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    #main_content {
+      z-index: 2;
+      position: relative;
+      display: inline-block;
+
+      /* Vertical center */
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    #main_content h1 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: 'proxima-nova-condensed', Helvetica;
+      color: #fff;
+      font-size: 35px;
+    }
+
+    #main_content .sub_head {
+      color: rgba(255,255,255,0.5);
+      font-size: 18px;
+    }
+
+    #main_content .info {
+      color: rgba(255,255,255,0.5);
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    #links {
+      margin-top: 50px;
+    }
+
+    #links a {
+      border: 2px solid rgba(255,255,255,0.20);
+      border-radius: 61px;
+      font-size: 12px;
+      color: #FFFFFF;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 10px 25px;
+      display: inline-block;
+      margin-right: 15px;
+    }
+    .arrow .down_arrow{
+      width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 9px;
+    }
+  img{
+    position: absolute;
+    top :250%;
+  }
+   
+
+  /* .typerwriter effevct  */
+  .typewriter-effect{
+  display: flex;
+  justify-content: center;
+  font-family:serif;
+}
+
+.typewriter-effect > .text {
+  max-width: 0;
+  animation: typing 3s steps(var(--characters)) infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 20px;
+  color: white;
+}
+
+
+
+@keyframes typing {
+  75%,
+  100% {
+    max-width: calc(var(--characters) * 1ch);
+  }
+}
+
+@keyframes blink {
+  0%,
+  75%,
+  100% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+  </style>
+
+  <script src="https://use.typekit.net/nlq1kdt.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+  <div id="container">
+    <video id="background_video" loop muted></video>
+    <div id="video_cover"></div>
+    <div id="overlay"></div>
+
+    
+
+    <section id="main_content">
+      <div id="head">
+        <h1 class="animate__animated animate__backInLeft animate__slower animate__reapeat" id="head">Welcome To Optimize Solution</h1>
+        <p class="sub_head">Solar power is energy from the sun that is converted into thermal or electrical energy. </p>
+        <p class="info">(Hold on! The video might take a while to load.)</p>
+      </div>
+
+      <div class="arrow">
+         <img src="down-arrow-svgrepo-com.svg" alt="dwonhrere" class="down_arrow  animate__animated animate__bounce  ">
+  
+      </div>
+
+   
+      <div class="typewriter-effect">
+        <div class="text" id="typewriter-text"></div>
+      </div>
+    </section>
+  </div>
+ 
+
+  <script src="bideo.js"></script>
+  <script src="main.js"></script>
+
+  <script>
+    const typeWriter = document.getElementById('typewriter-text');
+const text = 'Welcome To Optimize Solution.';
+
+typeWriter.innerHTML = text;
+typeWriter.style.setProperty('--characters', text.length);
+</script>
+</body>
+</html>
