@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E-Commerce Website</title>
+    <style>
+      body {
+        /* font-family: 'Roboto Slab', serif; */
+        font-family: "Roboto", sans-serif;
+        /* font-family: 'Open Sans', sans-serif; */
+
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&family=Roboto+Slab:wght@500&display=swap");
+
+      header {
+        background-color: #fbab7e;
+        background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+          rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin-right: 20px;
+      }
+
+      section {
+        padding: 20px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #666;
+        margin: 0;
+      }
+
+      .product {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        width: 200px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .product img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+      }
+
+      body > nav > ul > li:nth-child(n) > a {
+        text-decoration: none;
+        color: black;
+        transition: all 0.8ss ease-in;
+      }
+      body > nav > ul > li:nth-child(n) > a:hover {
+        background-color: #333;
+        padding: 10px 2px;
+        color: white;
+      }
+      #clothing > div:nth-child(n) > span > button {
+        border: none;
+        padding: 4px 24px;
+        color: black;
+        background-color: #fbab7e;
+        font-weight: 600;
+        background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+        margin-top: 1rem;
+        cursor: pointer;
+      }
+
+      #furniture > div:nth-child(n) > span > button {
+        border: none;
+        padding: 4px 24px;
+        color: black;
+        background-color: #fbab7e;
+        font-weight: 600;
+        background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+        margin-top: 1rem;
+        cursor: pointer;
+      }
+      #footwear > div:nth-child(n) > span > button {
+        border: none;
+        padding: 4px 24px;
+        color: black;
+        background-color: #fbab7e;
+        font-weight: 600;
+        background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+        margin-top: 1rem;
+        cursor: pointer;
+      }
+
+      #electronics > div:nth-child(n) > span > button {
+        border: none;
+        padding: 4px 24px;
+        color: black;
+        background-color: #fbab7e;
+        font-weight: 600;
+        background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+        margin-top: 1rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to our E-Commerce Website</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#electronics">Electronics</a></li>
+        <li><a href="#clothing">Clothing</a></li>
+        <li><a href="#footwear">Footwear</a></li>
+        <li><a href="#furniture">Furniture</a></li>
+      </ul>
+    </nav>
+
+    <section id="electronics">
+      <h2>Electronics</h2>
+      <div class="product">
+        <img
+          src="https://m.media-amazon.com/images/I/610pghkO81L._SX679_.jpg"
+          alt="Apple"
+        />
+        <h3>Apple</h3>
+        <p>iPhone</p>
+        <p>iPad</p>
+        <p>MacBook</p>
+        <span><button>Buy Now</button></span>
+      </div>
+      <div class="product">
+        <img
+          src="https://m.media-amazon.com/images/I/61ODgTm9J6L._SX569_.jpg"
+          alt="Samsung"
+        />
+        <h3>Samsung</h3>
+        <p>Galaxy</p>
+        <p>Smart TVs</p>
+        <p>Washing Machines</p>
+        <span><button>Buy Now</button></span>
+      </div>
+      <div class="product">
+        <img
+          src="https://m.media-amazon.com/images/I/610pghkO81L._SX679_.jpg"
+          alt="Redmi"
+        />
+        <h3>Redmi</h3>
+        <p>Redmi Note</p>
+        <p>Redmi AirDots</p>
+        <p>Redmi Smart Band</p>
+        <span><button>Buy Now</button></span>
+      </div>
+      <div class="product">
+        <img
+          src="https://m.media-amazon.com/images/I/71V--WZVUIL._AC_UF894,1000_QL80_FMwebp_.jpg"
+          alt="One plus"
+        />
+        <h3>One plus</h3>
+        <p>OnePlus 9 Pro</p>
+        <p>OnePlus Buds</p>
+        <p>OnePlus TV</p>
+        <span><button>Buy Now</button></span>
+      </div>
+    </section>
+
+    <section id="clothing">
+      <h2>Clothing</h2>
+      <div class="product">
+        <img
+          src="https://m.media-amazon.com/images/I/71WmwSot-vL._AC_SR350,526_FMwebp_QL65_.jpg"
+          alt="Men's T-shirts"
+        />
+        <h3>Men's Clothing</h3>
+        <p>T-shirts</p>
+        <p>Shirts</p>
+        <p>Pants</p>
+        <span><button>Buy Now</button></span>
+      </div>
+      <div class="product">
+        <img
+          src="https://m.media-amazon.com/images/I/817S2-D18WL._AC_SR350,526_FMwebp_QL65_.jpg"
+          alt="Women's Dresses"
+        />
+        <h3>Women's Clothing</h3>
+        <p>Dresses</p>
+        <p>Tops</p>
+        <p>Skirts</p>
+        <span><button>Buy Now</button></span>
+      </div>
+    </section>
+
+    <section id="footwear">
+      <h2>Footwear</h2>
+      <div class="product">
+        <img
+          src="https://m.media-amazon.com/images/I/51kYZjmfdZL._AC_SR350,526_FMwebp_QL65_.jpg"
+          alt="Men's Sneakers"
+        />
+        <h3>Men's Footwear</h3>
+        <p>Sneakers</p>
+        <p>Formal Shoes</p>
+        <p>Sandals</p>
+        <span><button>Buy Now</button></span>
+      </div>
+      <div class="product">
+        <img
+          src="https://m.media-amazon.com/images/I/51uS6hzuhrL._AC_SR350,526_FMwebp_QL65_.jpg"
+          alt="Women's Heels"
+        />
+        <h3>Women's Footwear</h3>
+        <p>Heels</p>
+        <p>Flats</p>
+        <p>Boots</p>
+        <span><button>Buy Now</button></span>
+      </div>
+    </section>
+
+    <section id="furniture">
+      <h2>Furniture</h2>
+      <div class="product">
+        <img
+          src="https://m.media-amazon.com/images/I/310eDsjYHwL._AA416_AC_FMwebp_QL65_.jpg"
+          alt="Living Room Sofas"
+        />
+        <h3>Living Room</h3>
+        <p>Sofas</p>
+        <p>Coffee Tables</p>
+        <p>TV Stands</p>
+        <span><button>Buy Now</button></span>
+      </div>
+      <div class="product">
+        <img
+          src="https://m.media-amazon.com/images/I/71Fu1WOKVQL._AA720_AC_FMwebp_QL65_.jpg"
+          alt="Bedroom Beds"
+        />
+        <h3>Bedroom</h3>
+        <p>Beds</p>
+        <p>Dressers</p>
+        <p>Nightstands</p>
+        <span><button>Buy Now</button></span>
+      </div>
+    </section>
+  </body>
+</html>
