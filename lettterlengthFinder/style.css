@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.word-box{
+    width: 70vw;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+input{
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid rgb(0, 0, 0,0.5);
+    border-radius: 5px;
+}
+#countArea{
+    font-size: 2rem;
+    
+   
+}
+#btn{
+    padding: 1rem;
+    font-size: 1rem;
+}
+.max10{
+    color: red;
+    font-size: .6rem;
+    text-align: center;
+    border: 1px solid red;
+    padding: .5rem;
+    
+
+}

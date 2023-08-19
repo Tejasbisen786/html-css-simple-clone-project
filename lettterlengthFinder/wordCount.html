@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Counter</title>
+</head>
+<body>
+    <textarea id="textArea" placeholder="Type here..."></textarea>
+    <p>Word count: <span id="wordCount">0</span></p>
+
+    <script>
+        // Get references to the textarea and word count span
+        var textArea = document.getElementById("textArea");
+        var wordCountSpan = document.getElementById("wordCount");
+
+        // Attach an event listener to the textarea for the "input" event
+        textArea.addEventListener("input", function () {
+            var text = textArea.value;
+
+            // Split the text into words using whitespace as the delimiter
+            var words = text.trim().split(/\s+/);
+
+            // Update the word count span with the number of words
+            wordCountSpan.textContent = words.length;
+        });
+    </script>
+</body>
+</html>
